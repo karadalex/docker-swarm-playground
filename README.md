@@ -1,6 +1,10 @@
 Docker Swarm Playground
 =======================
 
+## Requirements
+
+Vagrant installed
+
 ## Instructions
 
 1. Create cluster `vagrant up`
