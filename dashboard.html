@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Your dashboard</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <script
+      type="text/javascript"
+      src="http://192.168.99.100:19999/dashboard.js"
+    ></script>
+
+    <script>
+      var netdataTheme = 'slate';
+      var netdataPort = 19999;
+      var netdataNoDygraphs = true;
+      var netdataNoSparklines = true;
+      var netdataNoPeitys = true;
+      var netdataNoGoogleCharts = true;
+      var netdataNoMorris = true;
+      var netdataNoD3 = true;
+      var netdataNoC3 = true;
+      var netdataRegistry = false;
+    </script>
+  </head>
+  <body>
+    <!-- here we will add charts -->
+    <div
+      data-host="http://192.168.99.100:19999"
+      style="
+        width: 33%;
+        height: 100%;
+        align: center;
+        display: inline-block;
+        border: 2px solid black;
+      "
+    >
+      <h2 style="text-align: center; font-weight: bold;">192.168.99.100</h2>
+      <div
+        data-host="http://192.168.99.100:19999"
+        data-width="49%"
+        data-title="CPU"
+        data-netdata="system.cpu"
+        data-units="% used"
+        data-chart-library="gauge"
+        data-gauge-max-value="100"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+        data-colors="#22AA99"
+      ></div>
+
+      <div
+        data-host="http://192.168.99.100:19999"
+        data-width="49%"
+        data-title="RAM"
+        data-netdata="system.ram"
+        data-units="% used"
+        data-chart-library="gauge"
+        data-dimensions="used|buffers|active|wired"
+        data-append-options="percentage"
+        data-gauge-max-value="100"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+        data-colors="#FE3912"
+      ></div>
+
+      <div
+        data-host="http://192.168.99.100:19999"
+        data-width="49%"
+        data-title="NET IN"
+        data-netdata="netdata.net"
+        data-units="kb/s"
+        data-chart-library="gauge"
+        data-dimensions="in"
+        data-common-max="netdata-net-in"
+        data-height="100%"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+      ></div>
+
+      <div
+        data-host="http://192.168.99.100:19999"
+        data-width="49%"
+        data-title="NET OUT"
+        data-netdata="netdata.net"
+        data-units="kb/s"
+        data-chart-library="gauge"
+        data-dimensions="out"
+        data-common-max="netdata-net-out"
+        data-height="100%"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+      ></div>
+      <br />
+      <div
+        data-host="http://192.168.99.100:19999"
+        data-width="49%"
+        data-title="DISK READ"
+        data-netdata="system.io"
+        data-units="kB/s"
+        data-chart-library="gauge"
+        data-dimensions="in"
+        data-common-max="system-io-in"
+        data-height="100%"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+        role="application"
+      ></div>
+
+      <div
+        data-host="http://192.168.99.100:19999"
+        data-width="49%"
+        data-title="DISK WRITE"
+        data-netdata="system.io"
+        data-units="kB/s"
+        data-chart-library="gauge"
+        data-dimensions="out"
+        data-common-max="system-io-out"
+        data-height="100%"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+        role="application"
+      ></div>
+      <br />
+    </div>
+
+    <div
+      data-host="http://192.168.99.101:19999"
+      style="
+        width: 33%;
+        height: 100%;
+        align: center;
+        display: inline-block;
+        border: 2px solid black;
+      "
+    >
+      <h2 style="text-align: center; font-weight: bold;">192.168.99.101</h2>
+      <div
+        data-host="http://192.168.99.101:19999"
+        data-width="49%"
+        data-title="CPU"
+        data-netdata="system.cpu"
+        data-units="% used"
+        data-chart-library="gauge"
+        data-gauge-max-value="100"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+        data-colors="#22AA99"
+      ></div>
+
+      <div
+        data-host="http://192.168.99.101:19999"
+        data-width="49%"
+        data-title="RAM"
+        data-netdata="system.ram"
+        data-units="% used"
+        data-chart-library="gauge"
+        data-dimensions="used|buffers|active|wired"
+        data-append-options="percentage"
+        data-gauge-max-value="100"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+        data-colors="#FE3912"
+      ></div>
+
+      <div
+        data-host="http://192.168.99.101:19999"
+        data-width="49%"
+        data-title="NET IN"
+        data-netdata="netdata.net"
+        data-units="kb/s"
+        data-chart-library="gauge"
+        data-dimensions="in"
+        data-common-max="netdata-net-in"
+        data-height="100%"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+      ></div>
+
+      <div
+        data-host="http://192.168.99.101:19999"
+        data-width="49%"
+        data-title="NET OUT"
+        data-netdata="netdata.net"
+        data-units="kb/s"
+        data-chart-library="gauge"
+        data-dimensions="out"
+        data-common-max="netdata-net-out"
+        data-height="100%"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+      ></div>
+      <br />
+      <div
+        data-host="http://192.168.99.101:19999"
+        data-width="49%"
+        data-title="DISK READ"
+        data-netdata="system.io"
+        data-units="kB/s"
+        data-chart-library="gauge"
+        data-dimensions="in"
+        data-common-max="system-io-in"
+        data-height="100%"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+        role="application"
+      ></div>
+
+      <div
+        data-host="http://192.168.99.101:19999"
+        data-width="49%"
+        data-title="DISK WRITE"
+        data-netdata="system.io"
+        data-units="kB/s"
+        data-chart-library="gauge"
+        data-dimensions="out"
+        data-common-max="system-io-out"
+        data-height="100%"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+        role="application"
+      ></div>
+      <br />
+    </div>
+
+    <div
+      data-host="http://192.168.99.102:19999"
+      style="
+        width: 33%;
+        height: 100%;
+        align: center;
+        display: inline-block;
+        border: 2px solid black;
+      "
+    >
+      <h2 style="text-align: center; font-weight: bold;">192.168.99.102</h2>
+      <div
+        data-host="http://192.168.99.102:19999"
+        data-width="49%"
+        data-title="CPU"
+        data-netdata="system.cpu"
+        data-units="% used"
+        data-chart-library="gauge"
+        data-gauge-max-value="100"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+        data-colors="#22AA99"
+      ></div>
+
+      <div
+        data-host="http://192.168.99.102:19999"
+        data-width="49%"
+        data-title="RAM"
+        data-netdata="system.ram"
+        data-units="% used"
+        data-chart-library="gauge"
+        data-dimensions="used|buffers|active|wired"
+        data-append-options="percentage"
+        data-gauge-max-value="100"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+        data-colors="#FE3912"
+      ></div>
+
+      <div
+        data-host="http://192.168.99.102:19999"
+        data-width="49%"
+        data-title="NET IN"
+        data-netdata="netdata.net"
+        data-units="kb/s"
+        data-chart-library="gauge"
+        data-dimensions="in"
+        data-common-max="netdata-net-in"
+        data-height="100%"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+      ></div>
+
+      <div
+        data-host="http://192.168.99.102:19999"
+        data-width="49%"
+        data-title="NET OUT"
+        data-netdata="netdata.net"
+        data-units="kb/s"
+        data-chart-library="gauge"
+        data-dimensions="out"
+        data-common-max="netdata-net-out"
+        data-height="100%"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+      ></div>
+      <br />
+      <div
+        data-host="http://192.168.99.102:19999"
+        data-width="49%"
+        data-title="DISK READ"
+        data-netdata="system.io"
+        data-units="kB/s"
+        data-chart-library="gauge"
+        data-dimensions="in"
+        data-common-max="system-io-in"
+        data-height="100%"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+        role="application"
+      ></div>
+
+      <div
+        data-host="http://192.168.99.102:19999"
+        data-width="49%"
+        data-title="DISK WRITE"
+        data-netdata="system.io"
+        data-units="kB/s"
+        data-chart-library="gauge"
+        data-dimensions="out"
+        data-common-max="system-io-out"
+        data-height="100%"
+        data-before="0"
+        data-after="-540"
+        data-points="540"
+        role="application"
+      ></div>
+      <br />
+    </div>
+  </body>
+</html>
